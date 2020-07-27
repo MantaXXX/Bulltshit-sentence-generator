@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="title">
+    <h2>你想對誰說幹話</h2>
+  </div>
+  <form method="POST" action="/">
+    <div class="identity">
+      <div class="card">
+        <img class="card-img-top"
+          src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg" alt="">
+        <div class="select">
+          <input type="radio" name="job" id="engineer" value="engineer"
+            {{#if_same option 'engineer'}}checked{{/if_same}}>
+          <span>工程師</span>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top"
+          src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg" alt="">
+        <div class="select">
+          <input type="radio" name="job" id="designer" value="designer"
+            {{#if_same option 'designer'}}checked{{/if_same}}>
+          <span>設計師</span>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top user"
+          src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg" alt="">
+        <div class="select">
+          <input type="radio" name="job" id="entrepreneur" value="entrepreneur"
+            {{#if_same option 'entrepreneur'}}checked{{/if_same}}>
+          <span>創業家</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <button class="btn bullshit btn-warning" type="submit">產生幹話</button>
+  </form>
+  <input type="text" class="sentence" value="{{ sentence }}">
+</div>
+</div>
